@@ -16,9 +16,13 @@
         {
             "name": "freestanding-kernel-gcc-x64",
             "includePath": [
-                "${workspaceFolder}/Kernel/*"
+                "${workspaceFolder}/Kernel/include/*"
             ],
-            "compilerPath": "$HOME/Toolchains/gcc-14.2.0-compilers/bin/x86_64-elf-g++",
+            "defines": [
+                "HAL_X64"
+            ],
+            "forcedInclude": [],
+            "compilerPath": "/home/xbendan/Toolchains/gcc-14.2.0/bin/x86_64-elf-g++",
             "cStandard": "gnu23",
             "cppStandard": "gnu++23",
             "intelliSenseMode": "gcc-x64",
